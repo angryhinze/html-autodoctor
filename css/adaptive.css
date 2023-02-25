@@ -32,39 +32,7 @@
   }
 }
 @media screen and (max-width: 717px) {
-  .header__container .header__city {
+  .header {
     display: none;
-  }
-}
-@media screen and (max-width: 480px) {
-  .header__container .header__worktime .worktime__text-top, .header__container .header__worktime .worktime__text-bottom {
-    font-size: 11px;
-  }
-  .header__container .header__worktime .worktime__img {
-    height: 30px;
-    width: 30px;
-  }
-  .header__container .header__phone-block .phone-block__img {
-    height: 30px;
-    width: 30px;
-  }
-  .header__container .header__phone-block .phone-block__number {
-    font-size: 11px;
-  }
-}
-@media screen and (max-width: 320px) {
-  .header__container .header__worktime .worktime__text-top, .header__container .header__worktime .worktime__text-bottom {
-    font-size: 10px;
-  }
-  .header__container .header__worktime .worktime__img {
-    height: 20px;
-    width: 20px;
-  }
-  .header__container .header__phone-block .phone-block__img {
-    height: 25px;
-    width: 25px;
-  }
-  .header__container .header__phone-block .phone-block__number {
-    font-size: 10px;
   }
 }

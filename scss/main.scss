@@ -10,12 +10,20 @@
 
 body{
     font-family: 'Montserrat-Regular';
-    color: white;
+    color: black;
 }
+//====================================
+
+:root {
+  --main-red-color: #EC5565;
+}
+
+//====================================
 
 .header{
     background-color: rgb(51, 51, 51);
     height: 80px;
+    color:white;
 }
 
 .header__container{
@@ -25,8 +33,8 @@ body{
     display: flex;
     justify-content: space-between;
     
-    .header__city{
-    }
+    //.header__city{
+    //}
     
     .header__buttons{
         margin-left: 200px;
@@ -36,7 +44,7 @@ body{
             color: white;
         }
         a:hover{
-            color:#EC5565;
+            color:var(--main-red-color);
         }
         a:last-child{
             margin-left: 20px;
@@ -52,6 +60,7 @@ body{
     }
 }
 
+//==BLOCKS===
 
 .city{
     display: flex;
@@ -99,3 +108,86 @@ body{
 }
 
 //=================================
+
+.main{
+    max-width: 1300px;
+    margin: 0 auto;
+    .main__under-header{
+        margin: 25px 0px;
+    }
+}
+
+
+//===BLOCKS====
+
+.under-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .under-header__logo{}
+    .under-header__search{}
+    .under-header__header-button{}
+}
+
+.logo{
+    .logo__name{
+        font-family: 'Montserrat-Bold';
+        color: var(--main-red-color);
+        text-transform: uppercase;
+        font-size: 32px;
+        span{
+            color:black;
+            font-size: 20px;
+        }
+    }
+}
+
+.search{
+    display: flex;
+    .search__input{
+        width: 400px;
+        font-size: 16px;
+        padding: 0 10px 0 10px;
+        border:1px solid var(--main-red-color);
+    }
+    .search__button{
+        background-color: var(--main-red-color);
+        img{
+            height: 40px;
+            width: 40px;
+        }
+    }
+    .search__button:active{
+        img{
+            transform: scale(0.90);
+        }
+    }
+}
+
+.header-button{
+    a{
+        color: black;
+    }
+    .header-button__button{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        img{
+            border:1px solid var(--main-red-color);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.318);
+            height: 40px;
+            width: 40px;
+        }
+        .header-button__name{
+            padding-left: 10px;
+            font-size: 16px;
+        }
+    }
+    .header-button__button:active{
+        color: var(--main-red-color);
+        transform: scale(0.95);
+    }
+}
+
+
+

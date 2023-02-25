@@ -8,12 +8,17 @@
 }
 body {
   font-family: "Montserrat-Regular";
-  color: white;
+  color: black;
+}
+
+:root {
+  --main-red-color: #EC5565;
 }
 
 .header {
   background-color: rgb(51, 51, 51);
   height: 80px;
+  color: white;
 }
 
 .header__container {
@@ -32,7 +37,7 @@ body {
   color: white;
 }
 .header__container .header__buttons a:hover {
-  color: #EC5565;
+  color: var(--main-red-color);
 }
 .header__container .header__buttons a:last-child {
   margin-left: 20px;
@@ -87,4 +92,71 @@ body {
 }
 .phone-block .phone-block__number {
   margin-left: 15px;
+}
+
+.main {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.main .main__under-header {
+  margin: 25px 0px;
+}
+
+.under-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logo .logo__name {
+  font-family: "Montserrat-Bold";
+  color: var(--main-red-color);
+  text-transform: uppercase;
+  font-size: 32px;
+}
+.logo .logo__name span {
+  color: black;
+  font-size: 20px;
+}
+
+.search {
+  display: flex;
+}
+.search .search__input {
+  width: 400px;
+  font-size: 16px;
+  padding: 0 10px 0 10px;
+  border: 1px solid var(--main-red-color);
+}
+.search .search__button {
+  background-color: var(--main-red-color);
+}
+.search .search__button img {
+  height: 40px;
+  width: 40px;
+}
+.search .search__button:active img {
+  transform: scale(0.9);
+}
+
+.header-button a {
+  color: black;
+}
+.header-button .header-button__button {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.header-button .header-button__button img {
+  border: 1px solid var(--main-red-color);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.318);
+  height: 40px;
+  width: 40px;
+}
+.header-button .header-button__button .header-button__name {
+  padding-left: 10px;
+  font-size: 16px;
+}
+.header-button .header-button__button:active {
+  color: var(--main-red-color);
+  transform: scale(0.95);
 }
