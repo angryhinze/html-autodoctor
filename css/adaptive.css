@@ -31,8 +31,41 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 717px) {
+@media screen and (max-width: 870px) {
   .header {
     display: none;
+  }
+}
+@media screen and (max-width: 1120px) {
+  .under-header__logo .logo__name {
+    font-size: 20px;
+  }
+  .under-header__logo .logo__name span {
+    font-size: 14px;
+  }
+  .under-header__search .search__input {
+    width: 250px;
+    height: 35px;
+  }
+  .under-header__search .search__button img {
+    height: 35px;
+    width: 35px;
+  }
+}
+@media screen and (max-width: 870px) {
+  .main__under-header .under-header__logo .logo__name {
+    font-size: 34px;
+  }
+  .main__under-header .under-header__logo .logo__name span {
+    font-size: 26px;
+  }
+  .main__under-header .under-header__search {
+    display: none;
+  }
+  .main__under-header .under-header__header-button {
+    display: none;
+  }
+  .main__under-header .under-header__burger {
+    display: block;
   }
 }
