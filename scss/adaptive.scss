@@ -71,7 +71,7 @@
 }
 
 @media screen and (max-width: 870px){
-    .main__under-header{
+    .under-header{
         .under-header__logo{
             .logo__name{
                 font-size: 34px;
@@ -94,5 +94,9 @@
 
 
 //============BURGER============
-
+@media screen and (min-width: 871px){
+    .burger{
+        display: none;
+    }
+}
 //=============================
