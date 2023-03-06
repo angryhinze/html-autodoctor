@@ -1,14 +1,6 @@
-const burger_icon = document.querySelector(".under-header__burger");
-const burger = document.querySelector(".burger");
+const burger_icon = document.querySelector(".nav__burger-icon");
+const burger = document.querySelector(".header__menu");
 
 burger_icon.onclick = function(){
-    const openAttr = 'main__burger burger burger_open';
-    const closeAttr = 'main__burger burger';
-
-    if(burger.getAttribute('class') == openAttr){
-        burger.setAttribute('class', closeAttr);
-    }
-    else{
-        burger.setAttribute('class', openAttr);
-    }
+    burger.classList.toggle('menu_open');
 }

@@ -20,113 +20,32 @@ body{
 
 //====================================
 
+.wrapper{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+//====================================
+
 .header{
-    background-color: rgb(51, 51, 51);
-    height: 80px;
-    color:white;
-}
-
-.header__container{
-    max-width: 1300px;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    
-    //.header__city{
-    //}
-    
-    .header__buttons{
-        margin-left: 200px;
-        align-items: center;
-        display: flex;
-        a{
-            color: white;
-        }
-        a:hover{
-            color:var(--main-red-color);
-        }
-        a:last-child{
-            margin-left: 20px;
-        }
+    .header__nav{
+        padding: 25px 0px;
     }
-    
-    .header__worktime{
-        margin-left: 200px;
-    }
-    
-    .header__phone-block{
-        margin-left: 20px;
+    .header__menu{
+        padding: 10px 0 35px 0;
     }
 }
-
-//==BLOCKS===
-.city{
-    display: flex;
-    align-items: center;
-    .city__img{
-        height: 45px;
-        width: 45px;
-    }
-    .city__name{
-        padding: 0px 0 0 15px;
-    }
-}
-
-.worktime{
-    display: flex;
-    align-items: center;
-    .worktime__img{
-        height: 45px;
-        width: 45px;
-    }
-    .worktime__text-container{
-        display: flex;
-        flex-direction: column;
-        margin-left: 15px;
-        .worktime__text-top{
-            font-size: 12px;
-        }
-        .worktime__text-bottom{
-            margin-top: 5px;
-            font-size: 14px;
-        }
-    }
-}
-
-.phone-block{
-    display: flex;
-    align-items: center;
-    .phone-block__img{
-        height: 45px;
-        width: 45px;
-    }
-    .phone-block__number{
-        margin-left: 15px;
-    }
-}
-
-//=================================
-
-.main{
-    max-width: 1300px;
-    margin: 0 auto;
-    .main__under-header{
-        padding: 25px 10px;
-    }
-}
-
 
 //===BLOCKS====
 
-.under-header{
+.nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    // .under-header__logo{}
-    // .under-header__search{}
-    // .under-header__header-button{}
-    .under-header__burger{
+    // .nav__logo{}
+    // .nav__search{}
+    // .nav__nav-button{}
+    .nav__burger-icon{
         display: none;
         img{
             height: 40px;
@@ -170,11 +89,11 @@ body{
     }
 }
 
-.header-button{
+.nav-button{
     a{
         color: black;
     }
-    .header-button__button{
+    .nav-button__button{
         display: flex;
         align-items: center;
         background-color: #fff;
@@ -182,50 +101,64 @@ body{
             height: 40px;
             width: 40px;
         }
-        .header-button__name{
+        .nav-button__name{
             padding-left: 10px;
             font-size: 16px;
         }
     }
-    .header-button__button:active{
+    .nav-button__button:active{
         color: var(--main-red-color);
         transform: scale(0.95);
     }
 }
-
 //==
 
-// .main__burger{}
 
-.burger{
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    .burger__item{
-        font-size: 24px;
+.menu{
+    font-family: 'Montserrat-Bold';
+    text-transform: uppercase;
+    .menu__item{
+        font-size: 18px;
         color: black;
-        padding: 10px 0;
     }
-    .burger__item:active{
+    .menu__item:not(:first-child){
+        margin-left: 50px;
+    }
+    .menu__item:active{
         transform: scale(0.90);
+        color: var(--main-red-color);
     }
 }
 
-@keyframes showBurger{
-    0%{
-    opacity:0;
-    }
-    100% {
-    opacity:1;
-    }
-}
+//=================================
 
-.burger_open{
+// .main{
+
+// }
+
+.main__images{
     display: flex;
-    opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-    animation: showBurger 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
-    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+    a{
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    } 
+    a:not(:first-child){
+        margin-left: 10px;
+    }
+    
 }
 
+
+.main__services{
+    margin-top: 50px;
+}
+
+.services{
+    .services__title{
+        font-family: 'Montserrat-Bold';
+        font-size: 30px;
+    }
+}
 

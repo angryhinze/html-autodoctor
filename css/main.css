@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Montserrat-Regular";
   src: url(../fonts/Montserrat/Montserrat-Regular.ttf);
@@ -16,102 +15,27 @@ body {
   --main-red-color: #EC5565;
 }
 
-.header {
-  background-color: rgb(51, 51, 51);
-  height: 80px;
-  color: white;
-}
-
-.header__container {
-  max-width: 1300px;
-  height: 100%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-.header__container .header__buttons {
-  margin-left: 200px;
-  align-items: center;
-  display: flex;
-}
-.header__container .header__buttons a {
-  color: white;
-}
-.header__container .header__buttons a:hover {
-  color: var(--main-red-color);
-}
-.header__container .header__buttons a:last-child {
-  margin-left: 20px;
-}
-.header__container .header__worktime {
-  margin-left: 200px;
-}
-.header__container .header__phone-block {
-  margin-left: 20px;
-}
-
-.city {
-  display: flex;
-  align-items: center;
-}
-.city .city__img {
-  height: 45px;
-  width: 45px;
-}
-.city .city__name {
-  padding: 0px 0 0 15px;
-}
-
-.worktime {
-  display: flex;
-  align-items: center;
-}
-.worktime .worktime__img {
-  height: 45px;
-  width: 45px;
-}
-.worktime .worktime__text-container {
-  display: flex;
-  flex-direction: column;
-  margin-left: 15px;
-}
-.worktime .worktime__text-container .worktime__text-top {
-  font-size: 12px;
-}
-.worktime .worktime__text-container .worktime__text-bottom {
-  margin-top: 5px;
-  font-size: 14px;
-}
-
-.phone-block {
-  display: flex;
-  align-items: center;
-}
-.phone-block .phone-block__img {
-  height: 45px;
-  width: 45px;
-}
-.phone-block .phone-block__number {
-  margin-left: 15px;
-}
-
-.main {
+.wrapper {
   max-width: 1300px;
   margin: 0 auto;
 }
-.main .main__under-header {
-  padding: 25px 10px;
+
+.header .header__nav {
+  padding: 25px 0px;
+}
+.header .header__menu {
+  padding: 10px 0 35px 0;
 }
 
-.under-header {
+.nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.under-header .under-header__burger {
+.nav .nav__burger-icon {
   display: none;
 }
-.under-header .under-header__burger img {
+.nav .nav__burger-icon img {
   height: 40px;
   width: 40px;
 }
@@ -147,53 +71,61 @@ body {
   transform: scale(0.9);
 }
 
-.header-button a {
+.nav-button a {
   color: black;
 }
-.header-button .header-button__button {
+.nav-button .nav-button__button {
   display: flex;
   align-items: center;
   background-color: #fff;
 }
-.header-button .header-button__button img {
+.nav-button .nav-button__button img {
   height: 40px;
   width: 40px;
 }
-.header-button .header-button__button .header-button__name {
+.nav-button .nav-button__button .nav-button__name {
   padding-left: 10px;
   font-size: 16px;
 }
-.header-button .header-button__button:active {
+.nav-button .nav-button__button:active {
   color: var(--main-red-color);
   transform: scale(0.95);
 }
 
-.burger {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+.menu {
+  font-family: "Montserrat-Bold";
+  text-transform: uppercase;
 }
-.burger .burger__item {
-  font-size: 24px;
+.menu .menu__item {
+  font-size: 18px;
   color: black;
-  padding: 10px 0;
 }
-.burger .burger__item:active {
+.menu .menu__item:not(:first-child) {
+  margin-left: 50px;
+}
+.menu .menu__item:active {
   transform: scale(0.9);
+  color: var(--main-red-color);
 }
 
-@keyframes showBurger {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.burger_open {
+.main__images {
   display: flex;
-  opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
-  animation: showBurger 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
-  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+}
+.main__images a {
+  width: 50%;
+}
+.main__images a img {
+  width: 100%;
+}
+.main__images a:not(:first-child) {
+  margin-left: 10px;
+}
+
+.main__services {
+  margin-top: 50px;
+}
+
+.services .services__title {
+  font-family: "Montserrat-Bold";
+  font-size: 30px;
 }

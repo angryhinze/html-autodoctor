@@ -1,76 +1,81 @@
-@media screen and (max-width: 1366px) {
-  .header__container {
-    max-width: 90%;
-  }
-  .header__container .header__buttons {
-    margin-left: 100px;
-  }
-  .header__container .header__worktime {
-    margin-left: 100px;
-  }
-  .header__container .header__phone-block {
-    margin-left: 20px;
-  }
-}
-@media screen and (max-width: 1187px) {
-  .header__container .header__buttons {
-    margin-left: 10px;
-  }
-  .header__container .header__worktime {
-    margin-left: 10px;
-  }
-  .header__container .header__phone-block {
-    margin-left: 10px;
-  }
-}
-@media screen and (max-width: 987px) {
-  .header__container .header__buttons {
-    display: none;
-  }
-  .header__container .header__worktime {
-    margin: 0;
-  }
-}
-@media screen and (max-width: 870px) {
+@charset "UTF-8";
+@media screen and (max-width: 1280px) {
   .header {
-    display: none;
+    padding: 0 10px;
   }
 }
-@media screen and (max-width: 1120px) {
-  .under-header__logo .logo__name {
+@media screen and (max-width: 1024px) {
+  .header__nav .nav__logo .logo__name {
     font-size: 20px;
   }
-  .under-header__logo .logo__name span {
+  .header__nav .nav__logo .logo__name span {
     font-size: 14px;
   }
-  .under-header__search .search__input {
+  .header__nav .nav__search .search__input {
     width: 250px;
     height: 35px;
   }
-  .under-header__search .search__button img {
+  .header__nav .nav__search .search__button img {
     height: 35px;
     width: 35px;
   }
+  .header__menu .menu__item {
+    font-size: 16px;
+  }
 }
-@media screen and (max-width: 870px) {
-  .under-header .under-header__logo .logo__name {
+@media screen and (max-width: 768px) {
+  .header__nav .nav__logo .logo__name {
     font-size: 34px;
   }
-  .under-header .under-header__logo .logo__name span {
+  .header__nav .nav__logo .logo__name span {
     font-size: 26px;
   }
-  .under-header .under-header__search {
+  .header__nav .nav__search {
     display: none;
   }
-  .under-header .under-header__header-button {
+  .header__nav .nav__nav-button {
     display: none;
   }
-  .under-header .under-header__burger {
+  .header__nav .nav__burger-icon {
     display: block;
   }
-}
-@media screen and (min-width: 871px) {
-  .burger {
+  .header__menu {
     display: none;
+  }
+  .menu_open {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0; /*Элемент полностью прозрачный (невидимый)*/
+    animation: showMenu 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
+    animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  }
+  .menu_open .menu__item {
+    font-size: 24px;
+  }
+  .menu_open .menu__item:not(:first-child) {
+    margin: 20px 0 0 0;
+  }
+  @keyframes showMenu {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main__images {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .main__images a {
+    margin: 0;
+    width: 98%;
+  }
+  .main__images a:not(:first-child) {
+    margin: 10px 0 0 0;
   }
 }

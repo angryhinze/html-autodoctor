@@ -6,72 +6,65 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АвтоДоктор | Автомастерская</title>
+    <link rel="shortcut icon" href="favicon.svg">
     <link rel="stylesheet" href="./css/clear.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/adaptive.css">
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__container">
-            <div class="header__city city">
-                <img class="city__img" src="./images/city.svg" alt="city">
-                <p class="city__name">г. Каменск-Уральский</p>
-            </div>
-            <div class="header__buttons">
-                <a href="#">Доставка и оплата</a>
-                <a href="#">Контакты</a>
-            </div>
-            <div class="header__worktime worktime">
-                <img src="./images/worktime.svg" alt="worktime" class="worktime__img"></img>
-                <div class="worktime__text-container">
-                    <p class="worktime__text-top">Режим работы</p>
-                    <p class="worktime__text-bottom">Пн-Вс с 9:00 по 18:00</p>
+    <div class="wrapper">
+        <header class="header">
+            <nav class="header__nav nav">
+                <div class="nav__logo logo">
+                    <a href="#" class="logo__name">АвтоДоктор<span>.РУ</span></a>
                 </div>
+                <div class="nav__search search">
+                    <input class="search__input"></input>
+                    <button class="search__button">
+                        <img src="./images/loop.svg" alt="loop">
+                    </button>
+                </div>
+                <div class="nav__nav-button nav-button">
+                    <a href="#" class="nav-button__button">
+                        <img src="./images/cart.svg" alt="cart">
+                        <div class="nav-button__name">Корзина</div>
+                    </a>
+                </div>
+                <div class="nav__nav-button nav-button">
+                    <a href="#" class="nav-button__button">
+                        <img src="./images/cabinet.svg" alt="cabinet">
+                        <div class="nav-button__name">Личный кабинет</div>
+                    </a>
+                </div>
+                <div class="nav__burger-icon">
+                    <img src="./images/burger.svg"></img>
+                </div>
+            </nav>
+            <div class="header__menu menu">
+                <a href="#" class="menu__item">Главная</a>
+                <a href="#" class="menu__item">Услуги</a>
+                <a href="#" class="menu__item">О нас</a>
+                <a href="#" class="menu__item">Контакты</a>
             </div>
-            <div class="header__phone-block phone-block">
-                <img class="phone-block__img" src="./images/phone.svg" alt="phone">
-                <div class="phone-block__number">+7 (900) 00 000 00</div>
-            </div>
-        </div>
-    </header>
-    <main class="main">
-        <div class="main__under-header under-header">
-            <div class="under-header__logo logo">
-                <a href="#" class="logo__name">АвтоДоктор<span>.РУ</span></a>
-            </div>
-            <div class="under-header__search search">
-                <input class="search__input"></input>
-                <button class="search__button">
-                    <img src="./images/loop.svg" alt="loop">
-                </button>
-            </div>
-            <div class="under-header__header-button header-button">
-                <a href="#" class="header-button__button">
-                    <img src="./images/cart.svg" alt="cart">
-                    <div class="header-button__name">Корзина</div>
-                </a>
-            </div>
-            <div class="under-header__header-button header-button">
-                <a href="#" class="header-button__button">
-                    <img src="./images/cabinet.svg" alt="cabinet">
-                    <div class="header-button__name">Личный кабинет</div>
-                </a>
-            </div>
-            <div class="under-header__burger">
-                <img src="./images/burger.svg"></img>
-            </div>
-        </div>
-        <div class="main__burger burger">
-            <a href="#" class="burger__item">Доставка и оплата</a>
-            <a href="#" class="burger__item">Личный кабинет</a>
-            <a href="#" class="burger__item">Контакты</a>
-            <a href="#" class="burger__item">Корзина</a>
-        </div>
-        <div class="main__content" style="border:1px solid black; height: 200px; width: 200px;">
+        </header>
 
-        </div>
-    </main>
+
+
+        <main class="main">
+            <div class="main__images">
+                <a href="#">
+                    <img src="./images/skidka.jpg" alt="skidka">
+                </a>
+                <a href="#">
+                    <img src="./images/skidka.jpg" alt="skidka">
+                </a>
+            </div>
+            <div class="main__services services">
+                <h2 class="services__title">ПОПУЛЯРНЫЕ УСЛУГИ</h2>
+            </div>
+        </main>
+    </div>
     <script src="./js/javascript.js"></script>
 </body>
 
