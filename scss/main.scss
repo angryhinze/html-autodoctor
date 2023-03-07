@@ -153,6 +153,9 @@ body{
 
 .main__services{
     margin-top: 50px;
+    .services__container{
+        margin-top: 50px;
+    }
 }
 
 .services{
@@ -160,5 +163,44 @@ body{
         font-family: 'Montserrat-Bold';
         font-size: 30px;
     }
+    .services__container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+    }
 }
 
+.service{
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    border: 3px solid var(--main-red-color);
+    .service__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        max-width: 150px;
+        margin-right: 10px;
+        .service__title{
+            font-family: 'Montserrat-Bold';
+            font-size: 18px;
+        }
+        .service__subtitle{
+            margin-top: 10px;
+            color: var(--main-red-color);
+        }
+    }
+    .service__img{
+        width: 75px;
+        height: 75px;
+    }
+}
+
+.service:hover{
+    cursor:pointer;
+    background-color: var(--main-red-color);
+    color: white;
+    .service__subtitle{
+        color: white;
+    }
+}
