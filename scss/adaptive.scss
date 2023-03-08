@@ -5,105 +5,49 @@
 // 1024 px — Планшеты (альбомная ориентация)/Нетбуки;
 // 1280 px и более — PC.
 
-//=============nav=============
+//=============header=============
 
-@media screen and (max-width: 1280px){
-    .header{
-        padding: 0 10px;
+@media screen and (max-width: 1400px){
+    .header__information{
+        margin-top: 50px;
     }
 }
 
-@media screen and (max-width: 1024px){
-    .header__nav{
-        .nav__logo{
-            .logo__name{
-                font-size: 20px;
-                span{
-                    font-size: 14px;
-                }
-            }
+@media screen and (max-width: 900px){
+    .header__container{
+        padding: 20px;
+        .header__logo{
+            font-size: 36px;
         }
-        .nav__search{
-            .search__input{
-                width: 250px;
-                height: 35px;
-            }
-            .search__button{
-                img{
-                    height: 35px;
-                    width: 35px;
-                }
-            }
-        }
-    }
-
-    .header__menu{
-        .menu__item{
-            font-size: 16px;
-        }
-    }
-}
-
-@media screen and (max-width: 768px){
-    .header__nav{
-        .nav__logo{
-            .logo__name{
-                font-size: 34px;
-                span{
-                    font-size: 26px;
-                }
-            }
-        }
-        .nav__search{
-            display: none;
-        }
-        .nav__nav-button{
-            display: none;
-        }
-        .nav__burger-icon{
+        .header__icon{
             display: block;
         }
+        .header__buttons{
+            display: none;
+        }
+        .header__information{
+            display: none;
+        }
     }
+}
 
-    .header__menu{
+@media screen and (max-width: 500px){
+    .header__container{
+        .header__logo{
+            font-size: 26px;
+        }
+        .header__icon{
+            img{
+                width: 35px;
+                height: 35px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 899px){
+    .header__burger-container{
         display: none;
     }
-
-    .menu_open{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        opacity:0; /*Элемент полностью прозрачный (невидимый)*/
-        animation: showMenu 0.5s 1; /* Указываем название анимации, её время и количество повторов*/
-        animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
-        .menu__item{
-            font-size: 24px;
-        }
-        .menu__item:not(:first-child){
-            margin: 20px 0 0 0;
-        }
-    }
-
-    @keyframes showMenu{
-        0%{opacity:0;}
-        100%{opacity:1;}
-    }
 }
-
-
-//========================================
-
-@media screen and (max-width: 768px){
-    .main__images{
-        flex-wrap: wrap;
-        justify-content: center;
-        a{
-            margin: 0;
-            width: 98%;
-        }
-        a:not(:first-child){
-            margin: 10px 0 0 0;
-        }
-    }
-}
+//===============================

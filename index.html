@@ -6,123 +6,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>АвтоДоктор | Автомастерская</title>
-    <link rel="shortcut icon" href="favicon.svg">
+    <link rel="shortcut icon" href="./favicon.svg">
     <link rel="stylesheet" href="./css/clear.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/adaptive.css">
 </head>
 
 <body>
-    <div class="wrapper">
-        <header class="header">
-            <nav class="header__nav nav">
-                <div class="nav__logo logo">
-                    <a href="#" class="logo__name">АвтоДоктор<span>.РУ</span></a>
-                </div>
-                <div class="nav__search search">
-                    <input class="search__input"></input>
-                    <button class="search__button">
-                        <img src="./images/loop.svg" alt="loop">
-                    </button>
-                </div>
-                <div class="nav__nav-button nav-button">
-                    <a href="#" class="nav-button__button">
-                        <img src="./images/cart.svg" alt="cart">
-                        <div class="nav-button__name">Корзина</div>
-                    </a>
-                </div>
-                <div class="nav__nav-button nav-button">
-                    <a href="#" class="nav-button__button">
-                        <img src="./images/cabinet.svg" alt="cabinet">
-                        <div class="nav-button__name">Личный кабинет</div>
-                    </a>
-                </div>
-                <div class="nav__burger-icon">
-                    <img src="./images/burger.svg"></img>
-                </div>
-            </nav>
-            <div class="header__menu menu">
-                <a href="#" class="menu__item">Главная</a>
-                <a href="#" class="menu__item">Услуги</a>
-                <a href="#" class="menu__item">О нас</a>
-                <a href="#" class="menu__item">Контакты</a>
+    <header class="header">
+
+        <div class="header__container">
+            <div id="burger-icon" class="header__icon"><img src="./images/burger.svg" alt="burger"></div>
+            <div class="header__logo">АвтоДоктор</div>
+            <div class="header__buttons">
+                <a href="#" class="header__button">Услуги</a>
+                <a href="#" class="header__button">Контакты</a>
+                <a href="#" class="header__button">Акции</a>
+                <a href="#" class="header__button">Галерея</a>
             </div>
-        </header>
+            <div class="header__information">
+                <div class="header__info">Екатеринбург, ул. Турбинная, 40</div>
+                <a href="tel:1111" class="header__info">+7950000000</a>
+                <a href="email:11414@mail.ru" class="header__info">avtodoctor@gmail.com</a>
+            </div>
+            <a href="tel:10000" class="header__icon"><img src="./images/phone.svg" alt="phone"></a>
+        </div>
 
+        <div class="header__burger-container">
+            <div class="header__burger-link">
+                <img src="./images/fire.svg" alt="fire">
+                <a href="#">Услуги</a>
+            </div>
+            <div class="header__burger-link">
+                <img src="./images/fire.svg" alt="fire">
+                <a href="#">Контакты</a>
+            </div>
+            <div class="header__burger-link">
+                <img src="./images/fire.svg" alt="fire">
+                <a href="#">Акции</a>
+            </div>
+            <div class="header__burger-link">
+                <img src="./images/fire.svg" alt="fire">
+                <a href="#">Галерея</a>
+            </div>
+            <div class="header__burger-link">
+                <img src="./images/fire.svg" alt="fire">
+                <div>+7(900)000 00 00</div>
+            </div>
+            <div class="header__burger-link">
+                <img src="./images/fire.svg" alt="fire">
+                <div>avtodoctor@gmail.com</div>
+            </div>
+        </div>
 
-
-        <main class="main">
-            <section class="main__images">
-                <a href="#">
-                    <img src="./images/skidka.jpg" alt="skidka">
-                </a>
-                <a href="#">
-                    <img src="./images/skidka.jpg" alt="skidka">
-                </a>
-            </section>
-            <section class="main__services services">
-                <h2 class="services__title">ПОПУЛЯРНЫЕ УСЛУГИ</h2>
-                <div class="services__container">
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт двигателя</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт двигателя</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт механической КПП</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт турбин</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт двигателя</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт двигателя</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт двигателя</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                    <div class="services__service service">
-                        <div class="service__text">
-                            <div class="service__title">Ремонт двигателя</div>
-                            <div class="service__subtitle">Заказать услугу</div>
-                        </div>
-                        <img src="./images/city.svg" alt="engine" class="service__img">
-                    </div>
-                </div>
-            </section>
-        </main>
-    </div>
+    </header>
+    <main class="main">
+        <div class="main__promo promo">
+            <div class="promo__left-side">
+                <h2>Бесплатная проверка состояния тормозной жидкости</h2>
+                <h4>Акция действует во всех автомастерских</h4>
+                <button>Записаться</button>
+            </div>
+        </div>
+    </main>
     <script src="./js/javascript.js"></script>
 </body>
 
